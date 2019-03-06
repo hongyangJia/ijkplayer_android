@@ -40,6 +40,8 @@ public class FileExplorerActivity extends AppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        VideoActivity.intentTo(this, "rtmp://t_pull.lixianximen.com/live/abc", "测试源");
+
         if (mSettings == null) {
             mSettings = new Settings(this);
         }
